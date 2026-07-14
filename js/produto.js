@@ -1,0 +1,84 @@
+// ============================================================
+// PÁGINA DO PRODUTO — lê ?id= da URL e monta a análise completa
+// ============================================================
+
+function classeNota(nota) {
+  if (nota >= 7.5) return "boa";
+  if (nota >= 5.5) return "media";
+  return "ruim";
+}
+
+function montarProduto() {
+  const id = new URLSearchParams(location.search).get("id");
+  const produto = PRODUTOS.find((p) => p.id === id);
+
+  if (!produto) {
+    document.body.innerHTML =
+      "<div class='container' style='padding:60px 20px'><h1>Análise não encontrada</h1>" +
+      "<p><a href='index.html'>← Voltar para o início</a></p></div>";
+    return;
+  }
+
+  document.title = `${produto.nome} — Análise | Opiniões Tech`;
+
+  // Topo
+  const capa = document.getElementById("capa");
+  capa.style.background = produto.cor + "22";
+  if (produto.imagem) {
+    capa.innerHTML = `<img src="${produto.imagem}" alt="${produto.nome}">`;
+  } else {
+    capa.textContent = produto.icone;
+  }
+  document.getElementById("selo").textContent = produto.selo;
+  document.getElementById("nome").textContent = produto.nome;
+  document.getElementById("meta").textContent =
+    `${produto.categoria} · Análise publicada em ${new Date(produto.data + "T12:00:00")
+      .toLocaleDateString("pt-BR", { day: "numeric", month: "long", year: "numeric" })}`;
+
+  // Notas por categoria (barras)
+  document.getElementById("notas").innerHTML = Object.entries(produto.notas)
+    .map(
+      ([rotulo, valor]) => `
+      <div class="linha-nota">
+        <span class="rotulo">${rotulo}</span>
+        <div class="barra"><div class="${classeNota(valor)}" style="width:${valor * 10}%"></div></div>
+        <span class="valor">${valor.toFixed(1)}</span>
+      </div>`
+    )
+    .join("");
+
+  // Prós e contras
+  document.getElementById("lista-pros").innerHTML = produto.pros
+    .map((p) => `<li>${p}</li>`)
+    .join("");
+  document.getElementById("lista-contras").innerHTML = produto.contras
+    .map((c) => `<li>${c}</li>`)
+    .join("");
+
+  // Texto da análise
+  document.getElementById("texto-analise").innerHTML = produto.analise
+    .map((paragrafo) => `<p>${paragrafo}</p>`)
+    .join("");
+
+  // Especificações
+  document.getElementById("tabela-specs").innerHTML = Object.entries(produto.specs)
+    .map(([chave, valor]) => `<tr><td>${chave}</td><td>${valor}</td></tr>`)
+    .join("");
+
+  // Botões de compra (links de afiliado)
+  const lojas = [
+    { chave: "amazon", nome: "Comprar na Amazon", classe: "amazon" },
+    { chave: "mercadolivre", nome: "Ver no Mercado Livre", classe: "mercadolivre" },
+    { chave: "magalu", nome: "Ver no Magalu", classe: "magalu" }
+  ];
+  document.getElementById("botoes-compra").innerHTML = lojas
+    .filter((loja) => produto.links[loja.chave])
+    .map(
+      (loja) =>
+        `<a class="botao-compra ${loja.classe}" href="${produto.links[loja.chave]}"
+            target="_blank" rel="noopener sponsored">🛒 ${loja.nome}</a>`
+    )
+    .join("");
+}
+
+montarProduto();

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise | Opiniões Tech</title>
+  <link rel="icon" href="img/logo-simbolo.png">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <a class="logo" href="index.html"><img src="img/logo-simbolo.png" alt="">Opiniões<span>Tech</span></a>
+      <nav>
+        <a href="index.html">← Todas as análises</a>
+        <a href="forum.html">Fórum</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="produto-topo">
+    <div class="container">
+      <div class="produto-capa" id="capa"></div>
+      <div class="produto-info">
+        <span class="selo" id="selo"></span>
+        <h1 id="nome"></h1>
+        <p class="meta" id="meta"></p>
+      </div>
+    </div>
+  </section>
+
+  <main class="container colunas">
+    <div>
+      <div class="painel">
+        <h2>Notas</h2>
+        <div id="notas"><!-- barras de nota --></div>
+      </div>
+
+      <div class="painel">
+        <h2>Prós e contras</h2>
+        <div class="pros-contras">
+          <div class="pros">
+            <h3>👍 Prós</h3>
+            <ul id="lista-pros"></ul>
+          </div>
+          <div class="contras">
+            <h3>👎 Contras</h3>
+            <ul id="lista-contras"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="painel analise">
+        <h2>Nossa análise</h2>
+        <div id="texto-analise"></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="painel">
+        <h2>Onde comprar</h2>
+        <div id="botoes-compra"></div>
+        <p class="aviso-afiliado">Comprando pelos links acima, o site pode receber uma comissão, sem custo extra para você.</p>
+      </div>
+
+      <div class="painel">
+        <h2>Ficha técnica</h2>
+        <table class="specs" id="tabela-specs"></table>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><strong>Opiniões Tech</strong> — análises independentes de tecnologia.</p>
+    </div>
+  </footer>
+
+  <script src="js/dados.js"></script>
+  <script src="js/produto.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+/* ============================================================
+   ESTILO DO SITE — inspirado em sites de análises como RTINGS
+   ============================================================ */
+
+:root {
+  --fundo: #fafbfc;
+  --fundo-card: #ffffff;
+  --texto: #1c2430;
+  --texto-suave: #5b6474;
+  --marca: #1266c9;          /* azul da logo Opiniões Tech */
+  --marca-escura: #0d47a1;
+  --marca-clara: #e7f0fc;
+  --laranja: #f5820d;        /* laranja da logo */
+  --laranja-escuro: #c05f00;
+  --laranja-claro: #fdeedd;
+  --primaria: #0a58e8;       /* azul dos links */
+  --primaria-escura: #0d47a1;
+  --header: #141a26;
+  --borda: #e3e7ef;
+  --verde: #1fa864;
+  --amarelo: #e8a51a;
+  --vermelho: #d94f3d;
+  --raio: 12px;
+  --sombra: 0 1px 3px rgba(20, 26, 38, 0.08), 0 4px 16px rgba(20, 26, 38, 0.06);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+a { color: var(--primaria); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+/* ---------- Cabeçalho ---------- */
+header {
+  background: #fff;
+  border-bottom: 1px solid var(--borda);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--marca);
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+.logo img { height: 38px; }
+.logo span { color: var(--laranja); }
+.logo:hover { text-decoration: none; }
+
+nav { display: flex; gap: 4px; flex-wrap: wrap; }
+
+nav a {
+  color: #3a4354;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+nav a:hover, nav a.ativo {
+  background: var(--marca-clara);
+  color: var(--marca-escura);
+  text-decoration: none;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  background: #fff;
+  border-bottom: 1px solid var(--borda);
+  padding: 44px 0 48px;
+  text-align: center;
+}
+.hero h1 { font-size: 2.1rem; letter-spacing: -0.5px; margin-bottom: 10px; color: var(--header); }
+.hero h1 em { font-style: normal; color: var(--laranja); }
+.hero p { color: var(--texto-suave); max-width: 560px; margin: 0 auto; }
+
+/* ---------- Seções ---------- */
+.secao { padding: 40px 0; }
+.secao h2 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+.secao .subtitulo { color: var(--texto-suave); margin-bottom: 24px; }
+
+/* ---------- Grade de cards ---------- */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(20, 26, 38, 0.12);
+  text-decoration: none;
+}
+
+.card-capa {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.2rem;
+}
+.card-capa img { height: 108px; max-width: 80%; }
+
+.card-corpo { padding: 16px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+
+.selo {
+  display: inline-block;
+  background: var(--laranja-claro);
+  color: var(--laranja-escuro);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  align-self: flex-start;
+}
+
+.card h3 { font-size: 1.05rem; color: var(--texto); }
+.card .resumo { font-size: 0.88rem; color: var(--texto-suave); flex: 1; }
+
+.card-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+.card-rodape .categoria { font-size: 0.8rem; color: var(--texto-suave); font-weight: 600; }
+
+/* ---------- Nota (círculo) ---------- */
+.nota {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #fff;
+}
+.nota.boa { background: var(--verde); }
+.nota.media { background: var(--amarelo); }
+.nota.ruim { background: var(--vermelho); }
+
+/* ---------- Página do produto ---------- */
+.produto-topo {
+  background: var(--fundo-card);
+  border-bottom: 1px solid var(--borda);
+  padding: 36px 0;
+}
+.produto-topo .container {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.produto-capa {
+  width: 170px;
+  height: 170px;
+  border-radius: var(--raio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  flex-shrink: 0;
+}
+.produto-capa img { height: 140px; max-width: 88%; }
+.produto-info h1 { font-size: 1.8rem; letter-spacing: -0.5px; margin: 6px 0; }
+.produto-info .meta { color: var(--texto-suave); font-size: 0.9rem; }
+
+.colunas {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+  padding: 36px 0;
+  align-items: start;
+}
+@media (max-width: 800px) { .colunas { grid-template-columns: 1fr; } }
+
+.painel {
+  background: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 22px;
+  box-shadow: var(--sombra);
+}
+.painel + .painel { margin-top: 22px; }
+.painel h2 { font-size: 1.2rem; margin-bottom: 14px; }
+
+/* Notas por categoria */
+.linha-nota {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--borda);
+}
+.linha-nota:last-child { border-bottom: none; }
+.linha-nota .rotulo { flex: 1; font-weight: 600; font-size: 0.95rem; }
+.barra {
+  flex: 2;
+  height: 8px;
+  background: var(--borda);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.barra > div { height: 100%; border-radius: 999px; }
+.barra .boa { background: var(--verde); }
+.barra .media { background: var(--amarelo); }
+.barra .ruim { background: var(--vermelho); }
+.linha-nota .valor { font-weight: 800; min-width: 34px; text-align: right; }
+
+/* Prós e contras */
+.pros-contras { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media (max-width: 600px) { .pros-contras { grid-template-columns: 1fr; } }
+.pros-contras ul { list-style: none; }
+.pros-contras li {
+  padding: 6px 0 6px 26px;
+  position: relative;
+  font-size: 0.92rem;
+}
+.pros li::before { content: "✔"; color: var(--verde); position: absolute; left: 0; font-weight: 700; }
+.contras li::before { content: "✖"; color: var(--vermelho); position: absolute; left: 0; font-weight: 700; }
+.pros h3, .contras h3 { font-size: 1rem; margin-bottom: 6px; }
+
+/* Texto da análise */
+.analise p { margin-bottom: 14px; color: #2a3342; }
+
+/* Especificações */
+.specs { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.specs td { padding: 8px 4px; border-bottom: 1px solid var(--borda); }
+.specs td:first-child { font-weight: 600; color: var(--texto-suave); width: 45%; }
+.specs tr:last-child td { border-bottom: none; }
+
+/* Botões de compra */
+.botao-compra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #fff;
+  transition: filter 0.15s ease;
+}
+.botao-compra:hover { filter: brightness(1.1); text-decoration: none; }
+.botao-compra.amazon { background: #232f3e; }
+.botao-compra.mercadolivre { background: #ffe600; color: #2d3277; }
+.botao-compra.magalu { background: #0086ff; }
+
+.aviso-afiliado {
+  font-size: 0.78rem;
+  color: var(--texto-suave);
+  margin-top: 8px;
+}
+
+/* ---------- Rodapé ---------- */
+footer {
+  background: var(--header);
+  color: #9aa5b8;
+  padding: 28px 0;
+  margin-top: 40px;
+  font-size: 0.88rem;
+  text-align: center;
+}
+footer a { color: #c6cddb; }
+
+/* ---------- Fórum ---------- */
+.rotulo-secao {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+  margin: 26px 0 12px;
+}
+
+.grade-forum {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.cat-card {
+  background: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 18px;
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.cat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(20, 26, 38, 0.12);
+  text-decoration: none;
+}
+.cat-card h3 { color: var(--texto); font-size: 1.05rem; }
+.cat-card .contagem { color: var(--primaria); font-weight: 700; font-size: 0.9rem; }
+
+.discussao {
+  display: block;
+  background: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  box-shadow: var(--sombra);
+}
+.discussao:hover { text-decoration: none; border-color: var(--marca); }
+.discussao h3 { color: var(--texto); font-size: 1rem; margin-bottom: 4px; }
+.discussao .meta-disc { color: var(--texto-suave); font-size: 0.82rem; }
+
+.post {
+  background: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 16px 18px;
+  margin-bottom: 12px;
+}
+.post .autor { font-weight: 700; font-size: 0.92rem; }
+.post .quando { color: var(--texto-suave); font-size: 0.8rem; margin-left: 8px; }
+.post p { margin-top: 6px; font-size: 0.95rem; }
+
+/* Formulários */
+.formulario { display: flex; flex-direction: column; gap: 10px; }
+.formulario input, .formulario textarea {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--texto);
+}
+.formulario input:focus, .formulario textarea:focus {
+  outline: 2px solid var(--marca);
+  border-color: transparent;
+}
+.formulario textarea { min-height: 90px; resize: vertical; }
+
+.botao {
+  display: inline-block;
+  background: var(--marca);
+  color: #fff;
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.botao:hover { background: var(--marca-escura); }
+
+.aviso-local {
+  background: #fff8e6;
+  border: 1px solid #f2dfa8;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: #7a5d0e;
+  margin-bottom: 18px;
+}
+
+/* ---------- Utilidades ---------- */
+.voltar { display: inline-block; margin: 18px 0 0; font-weight: 600; }
