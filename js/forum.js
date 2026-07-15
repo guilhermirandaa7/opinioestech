@@ -97,7 +97,7 @@ function formatarData(iso) {
 }
 
 const AVISO_LOCAL = `
-  <div class="aviso-local">💡 Versão de demonstração: as mensagens ficam salvas
+  <div class="aviso-local"><svg class="icone" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg> Versão de demonstração: as mensagens ficam salvas
   apenas no seu navegador. Quando o site for publicado com um sistema de
   comentários, todos os visitantes verão as discussões.</div>`;
 
@@ -113,7 +113,7 @@ function telaCategorias(el) {
     return `
       <a class="cat-card" href="forum.html?c=${encodeURIComponent(cat)}">
         <h3>${cat}</h3>
-        <span class="contagem">💬 ${qtd} ${qtd === 1 ? "discussão" : "discussões"}</span>
+        <span class="contagem"><svg class="icone" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> ${qtd} ${qtd === 1 ? "discussão" : "discussões"}</span>
       </a>`;
   };
 

@@ -53,6 +53,19 @@ body {
 a { color: var(--dado); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* ícone SVG inline (traço, herda a cor do texto) */
+.icone {
+  width: 1.05em;
+  height: 1.05em;
+  flex-shrink: 0;
+  vertical-align: -0.14em;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 :focus-visible {
   outline: 2px solid var(--carimbo);
   outline-offset: 2px;
@@ -470,6 +483,9 @@ nav a.ativo {
 .pros li::before   { content: "+"; color: var(--boa); position: absolute; left: 0; font-family: var(--mono); font-weight: 700; }
 .contras li::before{ content: "−"; color: var(--ruim); position: absolute; left: 0; font-family: var(--mono); font-weight: 700; }
 .pros h3, .contras h3 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   font-family: var(--mono);
   font-size: 0.78rem;
   font-weight: 600;
@@ -478,6 +494,8 @@ nav a.ativo {
   margin-bottom: 8px;
   color: var(--texto-suave);
 }
+.pros h3 .icone { color: var(--boa); }
+.contras h3 .icone { color: var(--ruim); }
 
 /* Texto da análise */
 .analise p { margin-bottom: 15px; color: var(--texto-leve); font-size: 1rem; }
@@ -559,7 +577,7 @@ footer .aviso-afiliado { max-width: 60ch; margin: 10px auto 0; }
 }
 .cat-card:hover { transform: translateY(-3px); border-color: var(--carimbo); text-decoration: none; }
 .cat-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.1rem; }
-.cat-card .contagem { font-family: var(--mono); color: var(--dado); font-weight: 500; font-size: 0.85rem; }
+.cat-card .contagem { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); color: var(--dado); font-weight: 500; font-size: 0.85rem; }
 
 .discussao {
   display: block;
@@ -623,6 +641,9 @@ footer .aviso-afiliado { max-width: 60ch; margin: 10px auto 0; }
 .botao:hover { filter: brightness(1.08); transform: translateY(-1px); }
 
 .aviso-local {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
   background: rgba(47, 198, 242, 0.08);
   border: 1px solid rgba(47, 198, 242, 0.28);
   border-radius: 8px;
@@ -631,6 +652,7 @@ footer .aviso-afiliado { max-width: 60ch; margin: 10px auto 0; }
   color: var(--texto-leve);
   margin-bottom: 22px;
 }
+.aviso-local .icone { color: var(--dado); margin-top: 2px; width: 1.15em; height: 1.15em; }
 
 /* ---------- Utilidades ---------- */
 .voltar {
