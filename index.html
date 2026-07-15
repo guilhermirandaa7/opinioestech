@@ -8,7 +8,7 @@
   <link rel="icon" href="img/logo-simbolo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -20,23 +20,67 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <span class="eyebrow">Bancada de testes · Brasil</span>
-      <h1>Testado de verdade, dito <em>sem rodeios</em>.</h1>
-      <p>Monitores, mouses, teclados e headsets passam pela nossa bancada. Você recebe a nota por categoria, os prós, os contras e o veredito — sem review pago, sem enrolação.</p>
-      <div class="selos-hero">
-        <span>Análises independentes</span>
-        <span>Foco em custo-benefício</span>
-        <span>Recomendação clara</span>
+  <section class="hero container">
+    <div class="hero-card">
+      <div class="hero-texto">
+        <span class="eyebrow">Bancada de testes · Brasil</span>
+        <h1>Compre certo, <em>sem erro</em>.</h1>
+        <p>Testamos monitores, mouses, teclados e headsets e dizemos sem rodeios o que vale a pena. Nota por categoria, prós, contras e veredito.</p>
+        <div class="hero-botoes">
+          <a class="btn-primario" href="#analises">Ver análises</a>
+          <a class="btn-secundario" href="forum.html">Ir ao fórum</a>
+        </div>
+        <ul class="hero-features">
+          <li><svg class="icone" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5Z"/><path d="m9 12 2 2 4-4"/></svg> Análises independentes</li>
+          <li><svg class="icone" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Foco em custo-benefício</li>
+          <li><svg class="icone" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/><circle cx="12" cy="12" r="10"/></svg> Sem review pago</li>
+        </ul>
       </div>
+      <a class="hero-destaque" id="hero-destaque" href="#"><!-- montado pelo app.js --></a>
     </div>
   </section>
 
-  <main class="secao container">
-    <h2 id="titulo-secao">Últimas análises</h2>
-    <p class="subtitulo" id="subtitulo-secao">As avaliações mais recentes, com notas por categoria e onde comprar.</p>
-    <div class="grade" id="grade-produtos"><!-- montado pelo app.js --></div>
+  <main class="container">
+    <section class="secao" id="analises">
+      <div class="secao-cabecalho">
+        <div>
+          <h2 id="titulo-secao">Últimas análises</h2>
+          <p class="subtitulo" id="subtitulo-secao">As avaliações mais recentes, com notas por categoria e onde comprar.</p>
+        </div>
+      </div>
+      <div class="grade" id="grade-produtos"><!-- montado pelo app.js --></div>
+    </section>
+
+    <section class="secao" id="secao-categorias">
+      <div class="secao-cabecalho">
+        <div>
+          <h2>Por categoria</h2>
+          <p class="subtitulo">Escolha o tipo de produto que você está pesquisando.</p>
+        </div>
+      </div>
+      <div class="grade-categorias" id="grade-categorias"><!-- montado pelo app.js --></div>
+    </section>
+
+    <section class="confianca" id="secao-confianca">
+      <h2>Por que confiar na Opiniões Tech</h2>
+      <div class="confianca-itens">
+        <div>
+          <div class="ci-icone"><svg class="icone" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5Z"/></svg></div>
+          <h3>Análises independentes</h3>
+          <p>Ninguém paga para aparecer bem aqui. A nota é a que o produto merece.</p>
+        </div>
+        <div>
+          <div class="ci-icone"><svg class="icone" viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Foco em custo-benefício</h3>
+          <p>Priorizamos o que entrega mais pelo seu dinheiro, não o mais caro da prateleira.</p>
+        </div>
+        <div>
+          <div class="ci-icone"><svg class="icone" viewBox="0 0 24 24"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Veredito claro</h3>
+          <p>Prós, contras e uma recomendação direta: vale a pena, depende ou evite.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>

@@ -1,5 +1,6 @@
 // ============================================================
-// PÁGINA INICIAL — monta os cards a partir de PRODUTOS (dados.js)
+// PÁGINA INICIAL — monta hero em destaque, grade de análises,
+// cards de categoria e menu, a partir de PRODUTOS (dados.js)
 // ============================================================
 
 // Nota geral = média das notas por categoria, com 1 casa decimal
@@ -15,6 +16,13 @@ function classeNota(nota) {
   return "ruim";
 }
 
+function textoVeredito(nota) {
+  if (nota >= 8.5) return "Recomendado";
+  if (nota >= 7.0) return "Vale a pena";
+  if (nota >= 5.5) return "Depende";
+  return "Evite";
+}
+
 // Usa a imagem do produto se existir; senão, cai no emoji
 function capaHTML(produto) {
   return produto.imagem
@@ -26,7 +34,7 @@ function criarCard(produto) {
   const nota = notaGeral(produto);
   return `
     <a class="card" href="produto.html?id=${produto.id}">
-      <div class="card-capa" style="background:${produto.cor}22">${capaHTML(produto)}</div>
+      <div class="card-capa">${capaHTML(produto)}</div>
       <div class="card-corpo">
         <span class="selo">${produto.selo}</span>
         <h3>${produto.nome}</h3>
@@ -39,23 +47,54 @@ function criarCard(produto) {
     </a>`;
 }
 
-function montarPagina() {
-  const grade = document.getElementById("grade-produtos");
-  const filtroCategoria = new URLSearchParams(location.search).get("categoria");
+// Produto em destaque no hero (a análise mais recente)
+function montarDestaque(lista) {
+  const el = document.getElementById("hero-destaque");
+  if (!el) return;
+  const p = lista[0];
+  if (!p) { el.style.display = "none"; return; }
+  const nota = notaGeral(p);
+  const classe = classeNota(nota);
+  el.href = `produto.html?id=${p.id}`;
+  el.innerHTML = `
+    <div class="hd-pedestal">
+      <div class="hd-chip ${classe}">
+        <div class="n">${nota.toFixed(1)}<small>/10</small></div>
+        <div class="v">${textoVeredito(nota)}</div>
+      </div>
+      ${capaHTML(p)}
+    </div>
+    <div class="hd-legenda">
+      <span class="rot">Análise em destaque</span>
+      <span class="nome">${p.nome}</span>
+    </div>`;
+}
 
-  let lista = [...PRODUTOS].sort((a, b) => b.data.localeCompare(a.data));
-  if (filtroCategoria) {
-    lista = lista.filter((p) => p.categoria === filtroCategoria);
-    document.getElementById("titulo-secao").textContent = filtroCategoria;
-    document.getElementById("subtitulo-secao").textContent =
-      `Todas as nossas análises de ${filtroCategoria.toLowerCase()}.`;
-  }
+// Cards de categoria, com imagem representativa e contagem
+function montarCategorias() {
+  const el = document.getElementById("grade-categorias");
+  if (!el) return;
+  const categorias = [...new Set(PRODUTOS.map((p) => p.categoria))].sort();
+  el.innerHTML = categorias
+    .map((cat) => {
+      const daCat = PRODUTOS.filter((p) => p.categoria === cat);
+      const capa = capaHTML(daCat[0]);
+      const qtd = daCat.length;
+      return `
+        <a class="categoria-card" href="index.html?categoria=${encodeURIComponent(cat)}">
+          <div class="cc-img">${capa}</div>
+          <div>
+            <h3>${cat}</h3>
+            <p>${qtd} ${qtd === 1 ? "análise" : "análises"}</p>
+            <span class="cc-ver">Ver ${cat.toLowerCase()}
+              <svg class="icone" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></span>
+          </div>
+        </a>`;
+    })
+    .join("");
+}
 
-  grade.innerHTML = lista.length
-    ? lista.map(criarCard).join("")
-    : "<p>Nenhuma análise nesta categoria ainda.</p>";
-
-  // Monta o menu de categorias automaticamente
+function montarMenu(filtroCategoria) {
   const nav = document.getElementById("menu-categorias");
   const categorias = [...new Set(PRODUTOS.map((p) => p.categoria))].sort();
   nav.innerHTML =
@@ -68,6 +107,33 @@ function montarPagina() {
       )
       .join("") +
     `<a href="forum.html">Fórum</a>`;
+}
+
+function montarPagina() {
+  const grade = document.getElementById("grade-produtos");
+  const filtroCategoria = new URLSearchParams(location.search).get("categoria");
+
+  let lista = [...PRODUTOS].sort((a, b) => b.data.localeCompare(a.data));
+  if (filtroCategoria) {
+    lista = lista.filter((p) => p.categoria === filtroCategoria);
+    document.getElementById("titulo-secao").textContent = filtroCategoria;
+    document.getElementById("subtitulo-secao").textContent =
+      `Todas as nossas análises de ${filtroCategoria.toLowerCase()}.`;
+    // Numa categoria filtrada, foca só na grade: esconde hero e blocos de vitrine
+    ["hero", "secao-categorias", "secao-confianca"].forEach((cls) => {
+      const alvo = document.querySelector("." + cls) || document.getElementById(cls);
+      if (alvo) alvo.style.display = "none";
+    });
+  } else {
+    montarDestaque(lista);
+    montarCategorias();
+  }
+
+  grade.innerHTML = lista.length
+    ? lista.map(criarCard).join("")
+    : "<p>Nenhuma análise nesta categoria ainda.</p>";
+
+  montarMenu(filtroCategoria);
 }
 
 montarPagina();
