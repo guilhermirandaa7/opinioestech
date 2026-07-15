@@ -109,21 +109,41 @@ function montarMenu(filtroCategoria) {
     `<a href="forum.html">Fórum</a>`;
 }
 
+// Esconde hero e blocos de vitrine quando a grade é o foco (busca/categoria)
+function esconderVitrine() {
+  ["hero", "secao-categorias", "secao-confianca"].forEach((cls) => {
+    const alvo = document.querySelector("." + cls) || document.getElementById(cls);
+    if (alvo) alvo.style.display = "none";
+  });
+}
+
 function montarPagina() {
   const grade = document.getElementById("grade-produtos");
-  const filtroCategoria = new URLSearchParams(location.search).get("categoria");
+  const params = new URLSearchParams(location.search);
+  const filtroCategoria = params.get("categoria");
+  const termo = (params.get("busca") || "").trim();
+
+  // Preenche o campo de busca com o termo atual
+  const campo = document.getElementById("campo-busca");
+  if (campo && termo) campo.value = termo;
 
   let lista = [...PRODUTOS].sort((a, b) => b.data.localeCompare(a.data));
-  if (filtroCategoria) {
+
+  if (termo) {
+    const t = termo.toLowerCase();
+    lista = lista.filter((p) =>
+      `${p.nome} ${p.categoria} ${p.selo} ${p.resumo}`.toLowerCase().includes(t)
+    );
+    document.getElementById("titulo-secao").textContent = `Resultados para "${termo}"`;
+    document.getElementById("subtitulo-secao").textContent =
+      `${lista.length} ${lista.length === 1 ? "análise encontrada" : "análises encontradas"}.`;
+    esconderVitrine();
+  } else if (filtroCategoria) {
     lista = lista.filter((p) => p.categoria === filtroCategoria);
     document.getElementById("titulo-secao").textContent = filtroCategoria;
     document.getElementById("subtitulo-secao").textContent =
       `Todas as nossas análises de ${filtroCategoria.toLowerCase()}.`;
-    // Numa categoria filtrada, foca só na grade: esconde hero e blocos de vitrine
-    ["hero", "secao-categorias", "secao-confianca"].forEach((cls) => {
-      const alvo = document.querySelector("." + cls) || document.getElementById(cls);
-      if (alvo) alvo.style.display = "none";
-    });
+    esconderVitrine();
   } else {
     montarDestaque(lista);
     montarCategorias();
@@ -131,7 +151,7 @@ function montarPagina() {
 
   grade.innerHTML = lista.length
     ? lista.map(criarCard).join("")
-    : "<p>Nenhuma análise nesta categoria ainda.</p>";
+    : `<p>Nenhuma análise encontrada${termo ? ` para "${termo}"` : ""}. <a href="index.html">Ver todas</a>.</p>`;
 
   montarMenu(filtroCategoria);
 }
