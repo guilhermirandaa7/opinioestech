@@ -45,7 +45,7 @@ const PRODUTOS = [
       "Para trabalho, ele cumpre bem o papel, mas sente falta de botões extras e de conexão Bluetooth para alternar entre dispositivos. Se o seu foco é produtividade, vale olhar outras opções. Para jogos com orçamento limitado, é compra certa."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+g305",
+      amazon: "https://www.amazon.com.br/s?k=logitech+g305&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g305",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g305/"
     }
@@ -90,7 +90,7 @@ const PRODUTOS = [
       "Os pontos fracos são o blooming (halos de luz ao redor de objetos claros em fundo escuro) e a ergonomia básica. Para quem busca imagem acima de tudo nessa faixa de preço, é a recomendação mais fácil do momento."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=aoc+q27g3xmn",
+      amazon: "https://www.amazon.com.br/s?k=aoc+q27g3xmn&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/aoc-q27g3xmn",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/aoc+q27g3xmn/"
     }
@@ -135,7 +135,7 @@ const PRODUTOS = [
       "O microfone destacável é utilizável para jogar em grupo, mas não espere qualidade para gravações ou reuniões importantes. Pelo preço em promoção, é praticamente imbatível como primeiro headset."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=havit+h2002d",
+      amazon: "https://www.amazon.com.br/s?k=havit+h2002d&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/havit-h2002d",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/havit+h2002d/"
     }
@@ -180,7 +180,7 @@ const PRODUTOS = [
       "Não há software sofisticado nem troca de switches a quente, recursos que hoje aparecem em modelos um pouco mais caros. Mas como primeiro mecânico, continua sendo a recomendação segura."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=redragon+kumara+k552",
+      amazon: "https://www.amazon.com.br/s?k=redragon+kumara+k552&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-kumara",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+kumara/"
     }
@@ -220,7 +220,7 @@ const PRODUTOS = [
       "As limitações são coerentes com o valor: cabo fixo, iluminação simples e peso acima do que atletas de FPS procuram. Para quem quer um primeiro mouse confortável e durável, é uma escolha segura."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=razer+deathadder+essential",
+      amazon: "https://www.amazon.com.br/s?k=razer+deathadder+essential&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-deathadder-essential",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+deathadder+essential/"
     }
@@ -258,7 +258,7 @@ const PRODUTOS = [
       "O que pesa é o preço e a ausência de recursos supérfluos — não espere muitos botões nem iluminação. É um instrumento focado em desempenho, e nesse quesito não há praticamente do que reclamar."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+superlight",
+      amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+superlight&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g-pro-x-superlight",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g+pro+x+superlight/"
     }
@@ -296,7 +296,7 @@ const PRODUTOS = [
       "Os cortes aparecem no acabamento — plástico simples e cabo que enrola — mas nada que comprometa o uso diário. É a definição de custo-benefício na categoria de entrada."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=redragon+cobra+m711",
+      amazon: "https://www.amazon.com.br/s?k=redragon+cobra+m711&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-cobra-m711",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+cobra+m711/"
     }
@@ -334,7 +334,7 @@ const PRODUTOS = [
       "O tamanho reduzido é faca de dois gumes — quem tem mãos grandes vai achar apertado. E, como em vários modelos da faixa, vale ficar de olho na durabilidade dos switches a longo prazo."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=razer+viper+mini",
+      amazon: "https://www.amazon.com.br/s?k=razer+viper+mini&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-viper-mini",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+viper+mini/"
     }
@@ -372,7 +372,7 @@ const PRODUTOS = [
       "Não é o mais leve nem tem o sensor mais avançado, mas a consistência e o acabamento compensam. É uma recomendação segura para quem quer durabilidade sem gastar muito."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+g203",
+      amazon: "https://www.amazon.com.br/s?k=logitech+g203&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g203",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g203/"
     }
@@ -410,7 +410,7 @@ const PRODUTOS = [
       "Os furos incomodam quem tem receio de sujeira e nem todo mundo curte a estética. Fora isso, é um dos melhores leves com fio da faixa intermediária."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=glorious+model+o",
+      amazon: "https://www.amazon.com.br/s?k=glorious+model+o&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/glorious-model-o",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/glorious+model+o/"
     }
@@ -448,7 +448,7 @@ const PRODUTOS = [
       "Para jogos, esqueça: é pesado e assimétrico. Mas se o seu foco é edição, escritório ou programação, poucos mouses chegam perto. Vale cada centavo para o público certo."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+mx+master+3s",
+      amazon: "https://www.amazon.com.br/s?k=logitech+mx+master+3s&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-mx-master-3s",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+mx+master+3s/"
     }
@@ -486,7 +486,7 @@ const PRODUTOS = [
       "O peso e a assimetria o tiram da conversa para FPS competitivo, mas para quase todo o resto ele brilha — especialmente pelo preço, que costuma ser justo para tudo que oferece."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=razer+basilisk+v3",
+      amazon: "https://www.amazon.com.br/s?k=razer+basilisk+v3&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-basilisk-v3",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+basilisk+v3/"
     }
@@ -524,7 +524,7 @@ const PRODUTOS = [
       "Como todo mouse perfurado, exige limpeza de vez em quando, e é focado no essencial — sem firula de botões. Ainda assim, é um dos leves com melhor custo-benefício do mercado."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=hyperx+pulsefire+haste",
+      amazon: "https://www.amazon.com.br/s?k=hyperx+pulsefire+haste&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-pulsefire-haste",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+pulsefire+haste/"
     }
@@ -562,7 +562,7 @@ const PRODUTOS = [
       "O preço baixo cobra seu preço em consistência: relatos de controle de qualidade irregular e suporte limitado pedem cautela. É uma aposta ótima quando dá certo — só entre com expectativa realista."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=attack+shark+x3",
+      amazon: "https://www.amazon.com.br/s?k=attack+shark+x3&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/attack-shark-x3",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/attack+shark+x3/"
     }
@@ -602,7 +602,7 @@ const PRODUTOS = [
       "O HDR é só de nome e a ergonomia é básica, mas nada disso tira o brilho de um monitor que acerta o essencial pelo preço. É a recomendação padrão para o primeiro monitor gamer."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=lg+ultragear+24gn600",
+      amazon: "https://www.amazon.com.br/s?k=lg+ultragear+24gn600&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/lg-ultragear-24gn600",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/lg+ultragear+24gn600/"
     }
@@ -640,7 +640,7 @@ const PRODUTOS = [
       "Faltam recursos premium como HDR de verdade, mas isso é detalhe diante do pacote. Se você quer um único monitor que faz bem jogos e trabalho, ele é quase sempre a resposta certa."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=aoc+24g2",
+      amazon: "https://www.amazon.com.br/s?k=aoc+24g2&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/aoc-24g2",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/aoc+24g2/"
     }
@@ -678,7 +678,7 @@ const PRODUTOS = [
       "A ergonomia mínima e o HDR fraco são os limites do pacote, além do ghosting comum em painéis VA. Ainda assim, para quem quer dar o salto ao QHD sem estourar o orçamento, é uma escolha sólida."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=samsung+odyssey+g5",
+      amazon: "https://www.amazon.com.br/s?k=samsung+odyssey+g5&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/samsung-odyssey-g5",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/samsung+odyssey+g5/"
     }
@@ -716,7 +716,7 @@ const PRODUTOS = [
       "O HDR400 é só um bônus modesto e o preço no Brasil costuma pesar. Mas se você procura um monitor único para desempenho e criação com qualidade, ele está no topo da lista."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=dell+s2721dgf",
+      amazon: "https://www.amazon.com.br/s?k=dell+s2721dgf&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/dell-s2721dgf",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/dell+s2721dgf/"
     }
@@ -754,7 +754,7 @@ const PRODUTOS = [
       "O arranjo de subpixels BGR pode deixar textos levemente menos nítidos para alguns olhos, e a ergonomia é apenas correta. Fora isso, é um dos QHD mais completos em recursos pelo preço."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=gigabyte+m27q",
+      amazon: "https://www.amazon.com.br/s?k=gigabyte+m27q&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/gigabyte-m27q",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/gigabyte+m27q/"
     }
@@ -792,7 +792,7 @@ const PRODUTOS = [
       "É um produto premium, com preço à altura e HDR apenas ok. Mas para quem leva os jogos a sério e também valoriza cor para criação, ele entrega desempenho de elite sem precisar ir para o topo absoluto."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=lg+27gp850",
+      amazon: "https://www.amazon.com.br/s?k=lg+27gp850&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/lg-27gp850",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/lg+27gp850/"
     }
@@ -830,7 +830,7 @@ const PRODUTOS = [
       "A curvatura acentuada divide opiniões no uso produtivo e o blooming aparece em cenas de alto contraste. Para o gamer competitivo que também curte single-player, porém, é um dos pacotes mais empolgantes."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=samsung+odyssey+g7",
+      amazon: "https://www.amazon.com.br/s?k=samsung+odyssey+g7&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/samsung-odyssey-g7",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/samsung+odyssey+g7/"
     }
@@ -868,7 +868,7 @@ const PRODUTOS = [
       "Não espere HDR nem ergonomia sofisticada. É um monitor sem drama, para quem quer nitidez e taxa alta com o mínimo de dor de cabeça e um preço justo."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=viewsonic+vx2758+2kp",
+      amazon: "https://www.amazon.com.br/s?k=viewsonic+vx2758+2kp&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/viewsonic-vx2758",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/viewsonic+vx2758/"
     }
@@ -906,7 +906,7 @@ const PRODUTOS = [
       "Os 75 Hz e o tempo de resposta de 5 ms deixam claro o foco em produtividade, não em jogos rápidos. Para estudo, escritório e uso geral, é uma opção econômica e agradável."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=samsung+t350+monitor",
+      amazon: "https://www.amazon.com.br/s?k=samsung+t350+monitor&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/samsung-t350-monitor",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/samsung+t350+monitor/"
     }
@@ -944,7 +944,7 @@ const PRODUTOS = [
       "Vale lembrar que nem todo jogo suporta bem o 21:9 e o HDR é modesto. Mas para quem quer imersão e produtividade em uma tela só, o ultrawide é viciante — e este é um dos mais equilibrados em preço."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=lg+ultragear+34gp63a",
+      amazon: "https://www.amazon.com.br/s?k=lg+ultragear+34gp63a&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/lg-ultragear-34gp63a",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/lg+ultragear+34gp63a/"
     }
@@ -984,7 +984,7 @@ const PRODUTOS = [
       "O surround 7.1 virtual é mais efeito do que precisão e as almofadas fecham bastante o ouvido, esquentando em uso prolongado. Fora isso, é uma compra segura que envelhece muito bem."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=hyperx+cloud+ii",
+      amazon: "https://www.amazon.com.br/s?k=hyperx+cloud+ii&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-cloud-ii",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+cloud+ii/"
     }
@@ -1022,7 +1022,7 @@ const PRODUTOS = [
       "O microfone integrado é o ponto fraco — serve para conversar, mas não impressiona — e os graves são contidos. Como headset sem fio leve de entrada, ainda assim entrega bom valor."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+g435",
+      amazon: "https://www.amazon.com.br/s?k=logitech+g435&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g435",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g435/"
     }
@@ -1060,7 +1060,7 @@ const PRODUTOS = [
       "O acabamento é básico e o microfone não passa de mediano. Mas, como headset econômico e leve para longas sessões, ele entrega o essencial sem tropeços."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=razer+kraken+x",
+      amazon: "https://www.amazon.com.br/s?k=razer+kraken+x&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-kraken-x",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+kraken+x/"
     }
@@ -1098,7 +1098,7 @@ const PRODUTOS = [
       "O peso e a pressão nas laterais podem incomodar em sessões longas ou cabeças maiores, e a conexão USB limita o uso fora do PC. Para o gamer de PC com orçamento apertado, ainda assim é uma boa pedida."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=redragon+zeus+x",
+      amazon: "https://www.amazon.com.br/s?k=redragon+zeus+x&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-zeus-x",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+zeus+x/"
     }
@@ -1136,7 +1136,7 @@ const PRODUTOS = [
       "A construção é simples e não há recursos extras como surround ou software. Mas para um primeiro headset que soa bem e serve em PC, console e celular, é uma escolha de ótimo valor."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=jbl+quantum+100",
+      amazon: "https://www.amazon.com.br/s?k=jbl+quantum+100&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/jbl-quantum-100",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/jbl+quantum+100/"
     }
@@ -1174,7 +1174,7 @@ const PRODUTOS = [
       "Faltam extras como RGB e os graves são comedidos, mas isso combina com a proposta sóbria. Para quem quer um headset confiável e sem drama, é uma recomendação fácil."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=corsair+hs55",
+      amazon: "https://www.amazon.com.br/s?k=corsair+hs55&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/corsair-hs55",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/corsair+hs55/"
     }
@@ -1212,7 +1212,7 @@ const PRODUTOS = [
       "Para música ele fica devendo em graves e o acabamento é básico. Mas como headset de entrada focado em jogos, segue sendo uma das apostas mais seguras da categoria."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=hyperx+cloud+stinger+2",
+      amazon: "https://www.amazon.com.br/s?k=hyperx+cloud+stinger+2&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-cloud-stinger-2",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+cloud+stinger+2/"
     }
@@ -1250,7 +1250,7 @@ const PRODUTOS = [
       "As almofadas podem apertar cabeças maiores e o preço não é dos mais amigáveis. Mas se qualidade de voz é prioridade, poucos headsets nessa faixa entregam tanto."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+headset",
+      amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+headset&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g-pro-x-headset",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g+pro+x+headset/"
     }
@@ -1288,7 +1288,7 @@ const PRODUTOS = [
       "O reverso é a falta de equilíbrio — o grave às vezes atropela vozes e detalhes — e o conforto cai em uso prolongado. É uma opção divertida para quem prioriza impacto sobre fidelidade."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=redragon+diomedes",
+      amazon: "https://www.amazon.com.br/s?k=redragon+diomedes&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-diomedes",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+diomedes/"
     }
@@ -1326,7 +1326,7 @@ const PRODUTOS = [
       "É um pouco pesado e não traz recursos extras, mas a robustez e o som agradável fazem dele uma boa escolha para o público mais jovem ou para quem quer algo à prova de tranco."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=astro+a10",
+      amazon: "https://www.amazon.com.br/s?k=astro+a10&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/astro-a10",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/astro+a10/"
     }
@@ -1366,7 +1366,7 @@ const PRODUTOS = [
       "Sente-se falta de um apoio de pulso e os keycaps de ABS podem brilhar com o uso, além de os switches proprietários limitarem customização. Ainda assim, é um dos TKL mais bem construídos pelo preço."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=hyperx+alloy+origins+core",
+      amazon: "https://www.amazon.com.br/s?k=hyperx+alloy+origins+core&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-alloy-origins-core",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+alloy+origins+core/"
     }
@@ -1404,7 +1404,7 @@ const PRODUTOS = [
       "O preço é elevado para um TKL e os keycaps de ABS destoam do restante premium. Mas a flexibilidade de trocar switches à vontade é um diferencial e tanto para entusiastas."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+teclado",
+      amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+teclado&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g-pro-x-teclado",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g+pro+x+teclado/"
     }
@@ -1442,7 +1442,7 @@ const PRODUTOS = [
       "Os switches Green são deliciosamente barulhentos — o que pode ser um problema em ambientes compartilhados — e o formato completo pede mesa. Para quem quer um teclado robusto e clássico, entrega bem."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=razer+blackwidow+v3",
+      amazon: "https://www.amazon.com.br/s?k=razer+blackwidow+v3&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-blackwidow-v3",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+blackwidow+v3/"
     }
@@ -1480,7 +1480,7 @@ const PRODUTOS = [
       "O formato 60% exige adaptação — setas e teclas de função ficam em camadas Fn — e o software é básico. Mas pelo preço e pela versatilidade sem fio, é imbatível como primeiro compacto."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=redragon+draconic+k530",
+      amazon: "https://www.amazon.com.br/s?k=redragon+draconic+k530&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-draconic-k530",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+draconic+k530/"
     }
@@ -1518,7 +1518,7 @@ const PRODUTOS = [
       "O perfil é alto e pede apoio de pulso, e o foco é claramente digitação e produtividade — não FPS competitivo. Para trabalho e uso híbrido, porém, é uma delícia."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=keychron+k6",
+      amazon: "https://www.amazon.com.br/s?k=keychron+k6&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/keychron-k6",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/keychron+k6/"
     }
@@ -1556,7 +1556,7 @@ const PRODUTOS = [
       "O corpo fica um pouco largo para um TKL por causa das macros e o software é básico. Mas o conjunto de recursos pelo preço faz dele uma opção sem fio de ótimo valor."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=redragon+vishnu+k596",
+      amazon: "https://www.amazon.com.br/s?k=redragon+vishnu+k596&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-vishnu-k596",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+vishnu+k596/"
     }
@@ -1594,7 +1594,7 @@ const PRODUTOS = [
       "O toque não tem a precisão nem o retorno de um switch mecânico e o RGB é limitado a zonas. É um teclado honesto para uso geral, desde que você não faça questão do feel mecânico."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=logitech+g213",
+      amazon: "https://www.amazon.com.br/s?k=logitech+g213&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g213",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g213/"
     }
@@ -1632,7 +1632,7 @@ const PRODUTOS = [
       "O formato compacto tira as setas dedicadas e o preço é salgado para o tamanho. Mas em resposta, durabilidade dos keycaps e acabamento, ele entrega uma experiência de ponta."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=razer+huntsman+mini",
+      amazon: "https://www.amazon.com.br/s?k=razer+huntsman+mini&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-huntsman-mini",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+huntsman+mini/"
     }
@@ -1670,7 +1670,7 @@ const PRODUTOS = [
       "Os estabilizadores são apenas ok e o software é básico, além de não ter opção sem fio. Ainda assim, como porta de entrada barata ao mundo dos teclados compactos, entrega muito pelo que custa."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=redragon+fizz+k617",
+      amazon: "https://www.amazon.com.br/s?k=redragon+fizz+k617&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-fizz-k617",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+fizz+k617/"
     }
@@ -1708,7 +1708,7 @@ const PRODUTOS = [
       "Por ser membrana, falta a precisão e o retorno de um mecânico, e o acabamento é básico. Mas para quem valoriza silêncio, macros e um preço acessível, cumpre a proposta."
     ],
     links: {
-      amazon: "https://www.amazon.com.br/s?k=corsair+k55+rgb+pro",
+      amazon: "https://www.amazon.com.br/s?k=corsair+k55+rgb+pro&tag=opinioestech-20",
       mercadolivre: "https://lista.mercadolivre.com.br/corsair-k55-rgb-pro",
       magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/corsair+k55+rgb+pro/"
     }
