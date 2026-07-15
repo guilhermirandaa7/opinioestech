@@ -11,7 +11,7 @@ const PRODUTOS = [
     categoria: "Mouses",
     selo: "Melhor custo-benefício",
     icone: "🖱️",
-    imagem: "img/logitech-g305.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-sem-fio-logitech-g305-lightspeed-12000-dpi-6-botoes-preto-910-005281/kabum/97092/a4d79fb68387a5d8251755e2c45bda89.jpg",
     cor: "#4f7cff",
     data: "2026-07-10",
     resumo:
@@ -56,7 +56,7 @@ const PRODUTOS = [
     categoria: "Monitores",
     selo: "Melhor monitor até R$ 2.000",
     icone: "🖥️",
-    imagem: "img/aoc-q27g3xmn.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/monitor-de-jogos-aoc-q27g3xmn-27-mini-led-2k-qhd-180hz-1ms/nocnocestadosunidos/buybox-cpb0c8zjkpwc/de8030b0e32a48fe9c14dbfb75c4b4a3.jpeg",
     cor: "#9b59ff",
     data: "2026-07-08",
     resumo:
@@ -101,7 +101,7 @@ const PRODUTOS = [
     categoria: "Headsets",
     selo: "Melhor headset barato",
     icone: "🎧",
-    imagem: "img/havit-h2002d.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/headset-gamer-havit-drivers-53mm-microfone-plugavel-3-5mm-pc-ps4-xbox-one-preto-hv-h2002d/kabum/102770/be93e7ed81e88240e26c4ec35a651bb2.jpeg",
     cor: "#2ecc8f",
     data: "2026-07-05",
     resumo:
@@ -146,7 +146,7 @@ const PRODUTOS = [
     categoria: "Teclados",
     selo: "Clássico de entrada",
     icone: "⌨️",
-    imagem: "img/redragon-kumara-k552.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-mecanico-gamer-redragon-kumara-anti-ghosting-led-vermelho-switch-red-abnt2-preto-k552-2-pt-red/kabum/93162/d8c7cfcf926037f90024d90462614148.jpeg",
     cor: "#ff6b4a",
     data: "2026-07-01",
     resumo:
@@ -189,7 +189,7 @@ const PRODUTOS = [
   // ===================== MOUSES =====================
   {
     id: "razer-deathadder-essential",
-    imagem: "img/razer-deathadder-essential.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-razer-deathadder-essential-com-fio-6400-dpi-branco-rz01-03850200-r3m1/kabum/921180/05e4ee24e535edd85ca744d76f3a3259.jpeg",
     nome: "Razer DeathAdder Essential",
     categoria: "Mouses",
     selo: "Ergonomia clássica",
@@ -227,7 +227,7 @@ const PRODUTOS = [
   },
   {
     id: "logitech-gpro-x-superlight",
-    imagem: "img/logitech-gpro-x-superlight.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-sem-fio-logitech-g-pro-x-superlight-2-com-lightspeed-32000-dpi-sensor-hero-2-com-bateria-recarregavel-preto-910-006629/kabum/495544/54213b97bd5cd7a947f65887f2244289.jpeg",
     nome: "Logitech G Pro X Superlight",
     categoria: "Mouses",
     selo: "Escolha dos profissionais",
@@ -265,7 +265,7 @@ const PRODUTOS = [
   },
   {
     id: "redragon-cobra-m711",
-    imagem: "img/redragon-cobra-m711.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/kit-gamer-redragon-teclado-mecanico-kumara-rgb-switch-outemu-blue-pt-mouse-cobra-m711-chroma-10000dpi-s118/kabum/120674/41abf9f96499ede5cfa233fcef374054.jpeg",
     nome: "Redragon Cobra M711",
     categoria: "Mouses",
     selo: "Barato que funciona",
@@ -303,7 +303,7 @@ const PRODUTOS = [
   },
   {
     id: "razer-viper-mini",
-    imagem: "img/razer-viper-mini.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-razer-viper-mini-signature-edition-branco-30000dpi-49g-8khz/victoryimports/0000000000158/90da55b14776dd07bb1271d6fd33df74.jpeg",
     nome: "Razer Viper Mini",
     categoria: "Mouses",
     selo: "Leve para mãos pequenas",
@@ -341,7 +341,7 @@ const PRODUTOS = [
   },
   {
     id: "logitech-g203-lightsync",
-    imagem: "img/logitech-g203-lightsync.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-logitech-g203-lightsync-rgb-efeito-de-ondas-de-cores-6-botoes-programaveis-e-ate-8-000-dpi-preto-910-005793/kabum/112948/baee18890b2c3b5913146059d77f0c0c.jpg",
     nome: "Logitech G203 Lightsync",
     categoria: "Mouses",
     selo: "Simples e confiável",
@@ -379,7 +379,7 @@ const PRODUTOS = [
   },
   {
     id: "glorious-model-o",
-    imagem: "img/glorious-model-o.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-glorious-model-o-rgb-wireless-branco/bestgames/2412/9897b891d8281200f76ed7b6ed921a12.jpeg",
     nome: "Glorious Model O",
     categoria: "Mouses",
     selo: "Leve com estilo",
@@ -417,7 +417,7 @@ const PRODUTOS = [
   },
   {
     id: "logitech-mx-master-3s",
-    imagem: "img/logitech-mx-master-3s.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-logitech-mx-master-3s-bluetooth-edition-conexao-por-bluetooth-rolagem-ultra-rapida-8k-dpi-clique-silencioso-grafite-910-007502/kabum/989639/ad55119c798577cebafa6df66265bb28.jpeg",
     nome: "Logitech MX Master 3S",
     categoria: "Mouses",
     selo: "Rei da produtividade",
@@ -455,7 +455,7 @@ const PRODUTOS = [
   },
   {
     id: "razer-basilisk-v3",
-    imagem: "img/razer-basilisk-v3.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-razer-basilisk-v3-rgb-ergonomico-26k-dpi-11-botoes-preto-rz0104000100r3m1/kabum/290829/e1a6ab23056a0f30434eb73b54a26b43.jpeg",
     nome: "Razer Basilisk V3",
     categoria: "Mouses",
     selo: "Cheio de recursos",
@@ -493,7 +493,7 @@ const PRODUTOS = [
   },
   {
     id: "hyperx-pulsefire-haste",
-    imagem: "img/hyperx-pulsefire-haste.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-hyperx-pulsefire-haste-2-rgb-26000dpi-6-botoes-branco-6n0a8aa/kabum/519394/963feb4a80437f36a78f355377b09034.jpeg",
     nome: "HyperX Pulsefire Haste",
     categoria: "Mouses",
     selo: "Leve custo-benefício",
@@ -531,7 +531,7 @@ const PRODUTOS = [
   },
   {
     id: "attack-shark-x3",
-    imagem: "img/attack-shark-x3.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-sem-fio-attack-shark-x3-x3pro-26000dpi-pixart-paw3395-24g-conexao-tri-mode-leve/aliexpress/206860894/e9ea857cc7875337f13b3b1288d9a79f.jpeg",
     nome: "Attack Shark X3",
     categoria: "Mouses",
     selo: "Surpresa sem fio barata",
@@ -571,7 +571,7 @@ const PRODUTOS = [
   // ===================== MONITORES =====================
   {
     id: "lg-ultragear-24gn600",
-    imagem: "img/lg-ultragear-24gn600.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/monitor-gamer-lg-ultragear-24-full-hd-144hz-1ms-ips-g-sync-freesync-hdr10-preto-24g411a-b/kabum/986739/3c88ded099b840041c161370edce8e5b.jpeg",
     nome: "LG UltraGear 24GN600",
     categoria: "Monitores",
     selo: "144 Hz de entrada",
@@ -609,7 +609,7 @@ const PRODUTOS = [
   },
   {
     id: "aoc-24g2",
-    imagem: "img/aoc-24g2.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/monitor-gamer-aoc-27-full-hd-144hz-agon-g50-ips-05ms-27g50f-57-hdmi-displayport-g-sync/magazineluiza/240475700/35210491b2ea5297f1235bc6d108106b.jpg",
     nome: "AOC 24G2",
     categoria: "Monitores",
     selo: "Queridinho custo-benefício",
@@ -647,7 +647,7 @@ const PRODUTOS = [
   },
   {
     id: "samsung-odyssey-g5",
-    imagem: "img/samsung-odyssey-g5.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/monitor-gamer-samsung-27-odyssey-g5-qhd-165hz-1ms/primetek/029316/69e7224344b9189b8f9910aa3c140ba1.jpeg",
     nome: "Samsung Odyssey G5",
     categoria: "Monitores",
     selo: "QHD curvo em conta",
@@ -685,7 +685,7 @@ const PRODUTOS = [
   },
   {
     id: "dell-s2721dgf",
-    imagem: "img/dell-s2721dgf.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/notebook-dell-inspiron-15-i15-i1300-a30p-intel-core-i5-8gb-ram-512gb-ssd-15-6-full-hd-windows-11-210-bngc/magazineluiza/240428300/c76ebca593d35e6912b954012e62c35f.jpg",
     nome: "Dell S2721DGF",
     categoria: "Monitores",
     selo: "Rápido e preciso",
@@ -723,7 +723,7 @@ const PRODUTOS = [
   },
   {
     id: "gigabyte-m27q",
-    imagem: "img/gigabyte-m27q.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/monitor-gigabyte-m27q2-27-qhd-200hz-1ms-ips/nocnocestadosunidos/buybox-cpb0gkfqxr3r/c6a014a4afc590f4701f07b10c9ed345.jpeg",
     nome: "Gigabyte M27Q",
     categoria: "Monitores",
     selo: "KVM embutido",
@@ -761,7 +761,7 @@ const PRODUTOS = [
   },
   {
     id: "lg-27gp850",
-    imagem: "img/lg-27gp850.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/smart-tv-86-lg-4k-ultra-hd-qned-86qned73asa-webos-2025/magazineluiza/240989600/226b9c6bbbaebf45dd91c4d45f2373f2.jpg",
     nome: "LG UltraGear 27GP850",
     categoria: "Monitores",
     selo: "Alta taxa premium",
@@ -799,7 +799,7 @@ const PRODUTOS = [
   },
   {
     id: "samsung-odyssey-g7",
-    imagem: "img/samsung-odyssey-g7.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/adaptador-de-montagem-na-parede-para-monitor-samsung-odyssey-g7-tjyuze/nocnocestadosunidos/buybox-cpb0d49hg5vz/be1ab5cbf00915e76baa2e2f0d2e4729.jpeg",
     nome: "Samsung Odyssey G7",
     categoria: "Monitores",
     selo: "240 Hz curvo",
@@ -837,7 +837,7 @@ const PRODUTOS = [
   },
   {
     id: "viewsonic-vx2758",
-    imagem: "img/viewsonic-vx2758.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/projetor-viewsonic-pa503x-hdmi-4000-lumens/negociunoficial/13294/9a8074231109149ae44c27704d40a4ae.jpeg",
     nome: "ViewSonic VX2758-2KP-MHD",
     categoria: "Monitores",
     selo: "QHD honesto",
@@ -875,7 +875,7 @@ const PRODUTOS = [
   },
   {
     id: "samsung-t350",
-    imagem: "img/samsung-t350.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/monitor-samsung-serie-t350-lf24t350fhnxza-24-fhd-ips/nocnocestadosunidos/buybox-cpb08j4jrrct/4013dcd7eaa383855f58aa286efde93f.jpeg",
     nome: "Samsung T350",
     categoria: "Monitores",
     selo: "Básico para trabalho",
@@ -913,7 +913,7 @@ const PRODUTOS = [
   },
   {
     id: "lg-ultragear-34gp63a",
-    imagem: "img/lg-ultragear-34gp63a.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/monitor-gamer-lg-ultragear-24-full-hd-144hz-1ms-ips-g-sync-freesync-hdr10-preto-24g411a-b/kabum/986739/3c88ded099b840041c161370edce8e5b.jpeg",
     nome: "LG UltraGear 34GP63A",
     categoria: "Monitores",
     selo: "Ultrawide imersivo",
@@ -953,7 +953,7 @@ const PRODUTOS = [
   // ===================== HEADSETS =====================
   {
     id: "hyperx-cloud-ii",
-    imagem: "img/hyperx-cloud-ii.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/fone-de-ouvido-gamer-hyperx-cloud-earbuds-ii-driver-14mm-nintendo-switch-e-mobile-preto-70n24aa/kabum/483040/b6752760d935fc7f050883e2128c45d5.jpeg",
     nome: "HyperX Cloud II",
     categoria: "Headsets",
     selo: "Conforto lendário",
@@ -991,7 +991,7 @@ const PRODUTOS = [
   },
   {
     id: "logitech-g435",
-    imagem: "img/logitech-g435.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/headset-e-mouse-wireless-gaming-g435-g305-logitech/fagcomerciodeeletronicosltdame/748d07d28d5a11efbe824201ac18501b/c1fe7f40a701187189fbc6223c87b8c7.jpeg",
     nome: "Logitech G435 Lightspeed",
     categoria: "Headsets",
     selo: "Sem fio leve",
@@ -1029,7 +1029,7 @@ const PRODUTOS = [
   },
   {
     id: "razer-kraken-x",
-    imagem: "img/razer-kraken-x.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/fone-de-ouvido-razer-kraken-kitty-v2-bt-sem-fio-rgb-bluetooth-5-2/nocnocestadosunidos/buybox-cpb0d7ymgsdx/8f65749d124563027760b25287c7a6b9.jpeg",
     nome: "Razer Kraken X",
     categoria: "Headsets",
     selo: "Leve e barato",
@@ -1067,7 +1067,7 @@ const PRODUTOS = [
   },
   {
     id: "redragon-zeus-x",
-    imagem: "img/redragon-zeus-x.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/headset-gamer-redragon-zeus-x-chroma-mk-ii-rgb-som-surround-7-1-drivers-53mm-usb-preto-e-vermelho-h510-rgb/kabum/227818/da1fb35a9059a21e6679f0eeeaaced72.jpeg",
     nome: "Redragon Zeus X",
     categoria: "Headsets",
     selo: "RGB custo-benefício",
@@ -1105,7 +1105,7 @@ const PRODUTOS = [
   },
   {
     id: "jbl-quantum-100",
-    imagem: "img/jbl-quantum-100.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/fone-de-ouvido-jbl-quantum-100-m2-headset-gamer-preto-compativel-com-windows-sonic/fastshop2/jblqtum100ptob/0f3ec174a46deae130b35f69af268115.jpeg",
     nome: "JBL Quantum 100",
     categoria: "Headsets",
     selo: "Som de marca barato",
@@ -1143,7 +1143,7 @@ const PRODUTOS = [
   },
   {
     id: "corsair-hs55",
-    imagem: "img/corsair-hs55.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/headset-gamer-corsair-hs55-surround-v2-branco-ca-9011390-ww/kabum/690576/e93d4432e7d45cce86fa22bdd37d4a48.jpeg",
     nome: "Corsair HS55 Stereo",
     categoria: "Headsets",
     selo: "Equilíbrio geral",
@@ -1181,7 +1181,7 @@ const PRODUTOS = [
   },
   {
     id: "hyperx-cloud-stinger-2",
-    imagem: "img/hyperx-cloud-stinger-2.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/headset-gamer-hyperx-cloud-stinger-2-drivers-50mm-branco-playstation-75x29aa/kabum/505107/7b34ee0e3a6437035d4c9fef52e33456.jpeg",
     nome: "HyperX Cloud Stinger 2",
     categoria: "Headsets",
     selo: "Entrada confiável",
@@ -1219,7 +1219,7 @@ const PRODUTOS = [
   },
   {
     id: "logitech-gpro-x-headset",
-    imagem: "img/logitech-gpro-x-headset.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/headset-gamer-sem-fio-logitech-g-pro-x-2-lightspeed-driver-50mm-bluetooth-usb-e-3-5mm-para-pc-playstation-e-switch-rosa-magenta-981-001274/kabum/495543/300f59e7e138f7b04b11d2cfdf65dc32.jpeg",
     nome: "Logitech G Pro X Gaming",
     categoria: "Headsets",
     selo: "Microfone de destaque",
@@ -1257,7 +1257,7 @@ const PRODUTOS = [
   },
   {
     id: "redragon-diomedes",
-    imagem: "img/redragon-diomedes.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/fone-headset-gamer-diomedes-h388-3-5mm-redragon-preto/bftechchapeco/1415p/65a41bc6673e938ef2931582805825bd.jpeg",
     nome: "Redragon Diomedes",
     categoria: "Headsets",
     selo: "Grave reforçado",
@@ -1295,7 +1295,7 @@ const PRODUTOS = [
   },
   {
     id: "astro-a10",
-    imagem: "img/astro-a10.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/headset-gamer-astro-a10-ps4-xbox-one-pc-mac-nintendo-switch-2-0-branco-e-azul/magazineluiza/227721300/6d5050931bc7a1fc596b2e5ab023015f.jpg",
     nome: "Astro A10 (Gen 2)",
     categoria: "Headsets",
     selo: "Durabilidade jovem",
@@ -1335,7 +1335,7 @@ const PRODUTOS = [
   // ===================== TECLADOS =====================
   {
     id: "hyperx-alloy-origins-core",
-    imagem: "img/hyperx-alloy-origins-core.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-mecanico-gamer-hyperx-alloy-origins-core-switch-hyperx-red-abnt2-rgb-hx-kb6rdx-br/oficinadosbits2/38895/69ffe92b772741b4291d4ce4dca02165.jpeg",
     nome: "HyperX Alloy Origins Core",
     categoria: "Teclados",
     selo: "TKL premium",
@@ -1373,7 +1373,7 @@ const PRODUTOS = [
   },
   {
     id: "logitech-gpro-x-teclado",
-    imagem: "img/logitech-gpro-x-teclado.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-gamer-logitech-g-pro-x-tkl-rapid-switches-magnetico-analogicos-modo-rapid-trigger-layout-us-magenta-920-013133/kabum/703014/289882fc86b1b323492850ee33a11111.jpeg",
     nome: "Logitech G Pro X",
     categoria: "Teclados",
     selo: "Switches trocáveis",
@@ -1411,7 +1411,7 @@ const PRODUTOS = [
   },
   {
     id: "razer-blackwidow-v3",
-    imagem: "img/razer-blackwidow-v3.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-mecanico-gamer-razer-blackwidow-v3-chroma-rgb-switch-green-edicao-especial-layout-us-rz03-03543300-r3u1/kabum/921187/eba9f6d7906e9ef044b47030a8acc383.jpeg",
     nome: "Razer BlackWidow V3",
     categoria: "Teclados",
     selo: "Clássico full-size",
@@ -1449,7 +1449,7 @@ const PRODUTOS = [
   },
   {
     id: "redragon-draconic-k530",
-    imagem: "img/redragon-draconic-k530.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/mouse-gamer-redragon-infernal-dragon-ryu-rgb-16000dpi-8-botoes-preto-id711/kabum/171048/fb3e6a20ef44afbbea37b16cbd0c19f6.jpeg",
     nome: "Redragon Draconic K530",
     categoria: "Teclados",
     selo: "Compacto sem fio",
@@ -1487,7 +1487,7 @@ const PRODUTOS = [
   },
   {
     id: "keychron-k6",
-    imagem: "img/keychron-k6.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-mecanico-keychron-k3-v2-ultrafino-84-teclas-bluetooth/nocnocestadosunidos/buybox-cpb08lsj4rhh/8037755c82b15b34e1ce351f062a804f.jpeg",
     nome: "Keychron K6",
     categoria: "Teclados",
     selo: "Multiplataforma",
@@ -1525,7 +1525,7 @@ const PRODUTOS = [
   },
   {
     id: "redragon-vishnu-k596",
-    imagem: "img/redragon-vishnu-k596.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-gamer-redragon-vishnu-k596-switch-red-rgb-sem-fio-cor-preto/baro/2011/4161f7ce5611629b7f7b9699f2ecdba9.jpeg",
     nome: "Redragon Vishnu K596",
     categoria: "Teclados",
     selo: "Sem fio com macros",
@@ -1563,7 +1563,7 @@ const PRODUTOS = [
   },
   {
     id: "logitech-g213-prodigy",
-    imagem: "img/logitech-g213-prodigy.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-usb-gamer-prodigy-rgb-logitech-g213-preto-920-009438/bftechchapeco/5539p/21fbb3a61792fbf618a9492196d73f75.jpg",
     nome: "Logitech G213 Prodigy",
     categoria: "Teclados",
     selo: "Membrana resistente",
@@ -1601,7 +1601,7 @@ const PRODUTOS = [
   },
   {
     id: "razer-huntsman-mini",
-    imagem: "img/razer-huntsman-mini.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-gamer-razer-huntsman-v3-pro-mini-60-analogico-preto/nocnocestadosunidos/buybox-cpb0cg7c1nvp/701bdbc6ec41f6b1619e11782e13a9e0.jpeg",
     nome: "Razer Huntsman Mini",
     categoria: "Teclados",
     selo: "60% óptico rápido",
@@ -1639,7 +1639,7 @@ const PRODUTOS = [
   },
   {
     id: "redragon-fizz-k617",
-    imagem: "img/redragon-fizz-k617.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-magnetico-gamer-fizz-rgb-switch-magnetic-polling-rate-8k-redragon-preto-k617rgb-m/bftechchapeco/7631/d981390980951913271b6fda022a2a3a.jpeg",
     nome: "Redragon Fizz K617",
     categoria: "Teclados",
     selo: "Mini mecânico barato",
@@ -1677,7 +1677,7 @@ const PRODUTOS = [
   },
   {
     id: "corsair-k55-rgb",
-    imagem: "img/corsair-k55-rgb.svg",
+    imagem: "https://a-static.mlcdn.com.br/280x210/teclado-gamer-corsair-core-k55-rgb-icue-rgb-usb-2-0-preto-ch-9226c65-br/kabum/593793/2ccb31b0d2c18c776bc4fd7e0fea723b.jpeg",
     nome: "Corsair K55 RGB Pro",
     categoria: "Teclados",
     selo: "Membrana com macros",
