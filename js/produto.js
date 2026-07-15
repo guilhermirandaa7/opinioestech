@@ -8,6 +8,21 @@ function classeNota(nota) {
   return "ruim";
 }
 
+// Nota geral = média das notas por categoria (1 casa decimal)
+function notaGeral(produto) {
+  const valores = Object.values(produto.notas);
+  const media = valores.reduce((soma, n) => soma + n, 0) / valores.length;
+  return Math.round(media * 10) / 10;
+}
+
+// Veredito em uma palavra, derivado da nota geral
+function textoVeredito(nota) {
+  if (nota >= 8.5) return "Recomendado";
+  if (nota >= 7.0) return "Vale a pena";
+  if (nota >= 5.5) return "Depende";
+  return "Evite";
+}
+
 function montarProduto() {
   const id = new URLSearchParams(location.search).get("id");
   const produto = PRODUTOS.find((p) => p.id === id);
@@ -34,6 +49,15 @@ function montarProduto() {
   document.getElementById("meta").textContent =
     `${produto.categoria} · Análise publicada em ${new Date(produto.data + "T12:00:00")
       .toLocaleDateString("pt-BR", { day: "numeric", month: "long", year: "numeric" })}`;
+
+  // Selo de veredito (assinatura da marca)
+  const geral = notaGeral(produto);
+  const veredito = document.getElementById("veredito");
+  veredito.className = "veredito " + classeNota(geral);
+  veredito.innerHTML = `
+    <span class="v-topo">Veredito</span>
+    <span class="v-nota">${geral.toFixed(1)}</span>
+    <span class="v-selo">${textoVeredito(geral)}</span>`;
 
   // Notas por categoria (barras)
   document.getElementById("notas").innerHTML = Object.entries(produto.notas)
