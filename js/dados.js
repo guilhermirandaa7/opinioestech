@@ -47,7 +47,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+g305",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g305",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+g305/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g305/"
     }
   },
   {
@@ -92,7 +92,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=aoc+q27g3xmn",
       mercadolivre: "https://lista.mercadolivre.com.br/aoc-q27g3xmn",
-      magalu: "https://www.magazineluiza.com.br/busca/aoc+q27g3xmn/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/aoc+q27g3xmn/"
     }
   },
   {
@@ -137,7 +137,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=havit+h2002d",
       mercadolivre: "https://lista.mercadolivre.com.br/havit-h2002d",
-      magalu: "https://www.magazineluiza.com.br/busca/havit+h2002d/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/havit+h2002d/"
     }
   },
   {
@@ -182,7 +182,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=redragon+kumara+k552",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-kumara",
-      magalu: "https://www.magazineluiza.com.br/busca/redragon+kumara/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+kumara/"
     }
   },
 
@@ -222,7 +222,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=razer+deathadder+essential",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-deathadder-essential",
-      magalu: "https://www.magazineluiza.com.br/busca/razer+deathadder+essential/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+deathadder+essential/"
     }
   },
   {
@@ -260,7 +260,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+superlight",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g-pro-x-superlight",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+g+pro+x+superlight/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g+pro+x+superlight/"
     }
   },
   {
@@ -298,7 +298,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=redragon+cobra+m711",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-cobra-m711",
-      magalu: "https://www.magazineluiza.com.br/busca/redragon+cobra+m711/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+cobra+m711/"
     }
   },
   {
@@ -336,7 +336,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=razer+viper+mini",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-viper-mini",
-      magalu: "https://www.magazineluiza.com.br/busca/razer+viper+mini/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+viper+mini/"
     }
   },
   {
@@ -374,7 +374,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+g203",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g203",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+g203/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g203/"
     }
   },
   {
@@ -412,7 +412,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=glorious+model+o",
       mercadolivre: "https://lista.mercadolivre.com.br/glorious-model-o",
-      magalu: "https://www.magazineluiza.com.br/busca/glorious+model+o/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/glorious+model+o/"
     }
   },
   {
@@ -450,7 +450,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+mx+master+3s",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-mx-master-3s",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+mx+master+3s/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+mx+master+3s/"
     }
   },
   {
@@ -488,7 +488,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=razer+basilisk+v3",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-basilisk-v3",
-      magalu: "https://www.magazineluiza.com.br/busca/razer+basilisk+v3/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+basilisk+v3/"
     }
   },
   {
@@ -526,7 +526,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=hyperx+pulsefire+haste",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-pulsefire-haste",
-      magalu: "https://www.magazineluiza.com.br/busca/hyperx+pulsefire+haste/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+pulsefire+haste/"
     }
   },
   {
@@ -564,7 +564,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=attack+shark+x3",
       mercadolivre: "https://lista.mercadolivre.com.br/attack-shark-x3",
-      magalu: "https://www.magazineluiza.com.br/busca/attack+shark+x3/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/attack+shark+x3/"
     }
   },
 
@@ -604,7 +604,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=lg+ultragear+24gn600",
       mercadolivre: "https://lista.mercadolivre.com.br/lg-ultragear-24gn600",
-      magalu: "https://www.magazineluiza.com.br/busca/lg+ultragear+24gn600/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/lg+ultragear+24gn600/"
     }
   },
   {
@@ -642,7 +642,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=aoc+24g2",
       mercadolivre: "https://lista.mercadolivre.com.br/aoc-24g2",
-      magalu: "https://www.magazineluiza.com.br/busca/aoc+24g2/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/aoc+24g2/"
     }
   },
   {
@@ -680,7 +680,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=samsung+odyssey+g5",
       mercadolivre: "https://lista.mercadolivre.com.br/samsung-odyssey-g5",
-      magalu: "https://www.magazineluiza.com.br/busca/samsung+odyssey+g5/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/samsung+odyssey+g5/"
     }
   },
   {
@@ -718,7 +718,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=dell+s2721dgf",
       mercadolivre: "https://lista.mercadolivre.com.br/dell-s2721dgf",
-      magalu: "https://www.magazineluiza.com.br/busca/dell+s2721dgf/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/dell+s2721dgf/"
     }
   },
   {
@@ -756,7 +756,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=gigabyte+m27q",
       mercadolivre: "https://lista.mercadolivre.com.br/gigabyte-m27q",
-      magalu: "https://www.magazineluiza.com.br/busca/gigabyte+m27q/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/gigabyte+m27q/"
     }
   },
   {
@@ -794,7 +794,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=lg+27gp850",
       mercadolivre: "https://lista.mercadolivre.com.br/lg-27gp850",
-      magalu: "https://www.magazineluiza.com.br/busca/lg+27gp850/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/lg+27gp850/"
     }
   },
   {
@@ -832,7 +832,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=samsung+odyssey+g7",
       mercadolivre: "https://lista.mercadolivre.com.br/samsung-odyssey-g7",
-      magalu: "https://www.magazineluiza.com.br/busca/samsung+odyssey+g7/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/samsung+odyssey+g7/"
     }
   },
   {
@@ -870,7 +870,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=viewsonic+vx2758+2kp",
       mercadolivre: "https://lista.mercadolivre.com.br/viewsonic-vx2758",
-      magalu: "https://www.magazineluiza.com.br/busca/viewsonic+vx2758/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/viewsonic+vx2758/"
     }
   },
   {
@@ -908,7 +908,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=samsung+t350+monitor",
       mercadolivre: "https://lista.mercadolivre.com.br/samsung-t350-monitor",
-      magalu: "https://www.magazineluiza.com.br/busca/samsung+t350+monitor/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/samsung+t350+monitor/"
     }
   },
   {
@@ -946,7 +946,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=lg+ultragear+34gp63a",
       mercadolivre: "https://lista.mercadolivre.com.br/lg-ultragear-34gp63a",
-      magalu: "https://www.magazineluiza.com.br/busca/lg+ultragear+34gp63a/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/lg+ultragear+34gp63a/"
     }
   },
 
@@ -986,7 +986,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=hyperx+cloud+ii",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-cloud-ii",
-      magalu: "https://www.magazineluiza.com.br/busca/hyperx+cloud+ii/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+cloud+ii/"
     }
   },
   {
@@ -1024,7 +1024,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+g435",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g435",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+g435/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g435/"
     }
   },
   {
@@ -1062,7 +1062,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=razer+kraken+x",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-kraken-x",
-      magalu: "https://www.magazineluiza.com.br/busca/razer+kraken+x/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+kraken+x/"
     }
   },
   {
@@ -1100,7 +1100,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=redragon+zeus+x",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-zeus-x",
-      magalu: "https://www.magazineluiza.com.br/busca/redragon+zeus+x/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+zeus+x/"
     }
   },
   {
@@ -1138,7 +1138,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=jbl+quantum+100",
       mercadolivre: "https://lista.mercadolivre.com.br/jbl-quantum-100",
-      magalu: "https://www.magazineluiza.com.br/busca/jbl+quantum+100/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/jbl+quantum+100/"
     }
   },
   {
@@ -1176,7 +1176,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=corsair+hs55",
       mercadolivre: "https://lista.mercadolivre.com.br/corsair-hs55",
-      magalu: "https://www.magazineluiza.com.br/busca/corsair+hs55/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/corsair+hs55/"
     }
   },
   {
@@ -1214,7 +1214,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=hyperx+cloud+stinger+2",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-cloud-stinger-2",
-      magalu: "https://www.magazineluiza.com.br/busca/hyperx+cloud+stinger+2/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+cloud+stinger+2/"
     }
   },
   {
@@ -1252,7 +1252,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+headset",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g-pro-x-headset",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+g+pro+x+headset/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g+pro+x+headset/"
     }
   },
   {
@@ -1290,7 +1290,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=redragon+diomedes",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-diomedes",
-      magalu: "https://www.magazineluiza.com.br/busca/redragon+diomedes/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+diomedes/"
     }
   },
   {
@@ -1328,7 +1328,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=astro+a10",
       mercadolivre: "https://lista.mercadolivre.com.br/astro-a10",
-      magalu: "https://www.magazineluiza.com.br/busca/astro+a10/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/astro+a10/"
     }
   },
 
@@ -1368,7 +1368,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=hyperx+alloy+origins+core",
       mercadolivre: "https://lista.mercadolivre.com.br/hyperx-alloy-origins-core",
-      magalu: "https://www.magazineluiza.com.br/busca/hyperx+alloy+origins+core/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/hyperx+alloy+origins+core/"
     }
   },
   {
@@ -1406,7 +1406,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+g+pro+x+teclado",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g-pro-x-teclado",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+g+pro+x+teclado/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g+pro+x+teclado/"
     }
   },
   {
@@ -1444,7 +1444,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=razer+blackwidow+v3",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-blackwidow-v3",
-      magalu: "https://www.magazineluiza.com.br/busca/razer+blackwidow+v3/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+blackwidow+v3/"
     }
   },
   {
@@ -1482,7 +1482,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=redragon+draconic+k530",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-draconic-k530",
-      magalu: "https://www.magazineluiza.com.br/busca/redragon+draconic+k530/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+draconic+k530/"
     }
   },
   {
@@ -1520,7 +1520,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=keychron+k6",
       mercadolivre: "https://lista.mercadolivre.com.br/keychron-k6",
-      magalu: "https://www.magazineluiza.com.br/busca/keychron+k6/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/keychron+k6/"
     }
   },
   {
@@ -1558,7 +1558,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=redragon+vishnu+k596",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-vishnu-k596",
-      magalu: "https://www.magazineluiza.com.br/busca/redragon+vishnu+k596/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+vishnu+k596/"
     }
   },
   {
@@ -1596,7 +1596,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=logitech+g213",
       mercadolivre: "https://lista.mercadolivre.com.br/logitech-g213",
-      magalu: "https://www.magazineluiza.com.br/busca/logitech+g213/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/logitech+g213/"
     }
   },
   {
@@ -1634,7 +1634,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=razer+huntsman+mini",
       mercadolivre: "https://lista.mercadolivre.com.br/razer-huntsman-mini",
-      magalu: "https://www.magazineluiza.com.br/busca/razer+huntsman+mini/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/razer+huntsman+mini/"
     }
   },
   {
@@ -1672,7 +1672,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=redragon+fizz+k617",
       mercadolivre: "https://lista.mercadolivre.com.br/redragon-fizz-k617",
-      magalu: "https://www.magazineluiza.com.br/busca/redragon+fizz+k617/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/redragon+fizz+k617/"
     }
   },
   {
@@ -1710,7 +1710,7 @@ const PRODUTOS = [
     links: {
       amazon: "https://www.amazon.com.br/s?k=corsair+k55+rgb+pro",
       mercadolivre: "https://lista.mercadolivre.com.br/corsair-k55-rgb-pro",
-      magalu: "https://www.magazineluiza.com.br/busca/corsair+k55+rgb+pro/"
+      magalu: "https://www.magazinevoce.com.br/magazineopiniaotech/busca/corsair+k55+rgb+pro/"
     }
   }
 ];
