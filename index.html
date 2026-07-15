@@ -67,6 +67,28 @@
       <div class="grade-categorias" id="grade-categorias"><!-- montado pelo app.js --></div>
     </section>
 
+    <section class="secao" id="secao-noticias">
+      <div class="secao-cabecalho">
+        <div>
+          <h2>Diário de tecnologia</h2>
+          <p class="subtitulo">Manchetes selecionadas das principais fontes, atualizadas todo dia. <span id="noticias-atualizado"></span></p>
+        </div>
+      </div>
+      <div class="noticias" id="lista-noticias"><!-- montado por noticias.js --></div>
+
+      <div class="newsletter" id="newsletter">
+        <div>
+          <h3>Receba as manchetes no seu e-mail</h3>
+          <p>Um resumo das novidades de tecnologia toda manhã. Sem spam, cancele quando quiser.</p>
+        </div>
+        <form class="newsletter-form" id="form-newsletter">
+          <input type="email" name="email" placeholder="seu@email.com" required aria-label="Seu e-mail">
+          <button class="botao" type="submit">Quero receber</button>
+        </form>
+        <p class="newsletter-aviso" id="newsletter-aviso"></p>
+      </div>
+    </section>
+
     <section class="confianca" id="secao-confianca">
       <h2>Por que confiar na Opiniões Tech</h2>
       <div class="confianca-itens">
@@ -98,5 +120,22 @@
 
   <script src="js/dados.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/noticias.js"></script>
+  <script>
+    // Cadastro na newsletter — enquanto o serviço de e-mail não está conectado,
+    // apenas confirma visualmente. Trocar por: form.action = "<endpoint do serviço>".
+    (function () {
+      var form = document.getElementById("form-newsletter");
+      if (!form) return;
+      form.addEventListener("submit", function (e) {
+        if (!form.getAttribute("action")) {
+          e.preventDefault();
+          var aviso = document.getElementById("newsletter-aviso");
+          aviso.textContent = "Cadastro recebido! O envio dos e-mails será ativado em breve.";
+          form.reset();
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

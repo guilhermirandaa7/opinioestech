@@ -288,6 +288,48 @@ nav a.ativo { color: #fff; background: var(--ink); }
 .categoria-card p { font-size: 0.82rem; color: var(--ink-soft); }
 .categoria-card .cc-ver { color: var(--ink); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px; display: inline-flex; align-items: center; gap: 5px; }
 
+/* ---------- Diário de tecnologia (notícias) ---------- */
+.noticias {
+  display: grid; grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 640px) { .noticias { grid-template-columns: 1fr; } }
+.noticia {
+  display: flex; flex-direction: column; gap: 8px;
+  padding: 16px 18px; border-bottom: 1px solid var(--border); color: var(--ink);
+  transition: background 0.14s ease;
+}
+.noticia:nth-child(odd) { border-right: 1px solid var(--border); }
+@media (max-width: 640px) { .noticia:nth-child(odd) { border-right: none; } }
+.noticia:hover { background: var(--surface-2); text-decoration: none; }
+.noticia-topo { display: flex; align-items: center; gap: 10px; }
+.noticia-fonte {
+  font-family: var(--display); font-size: 0.62rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1px;
+  color: #fff; background: var(--ink); padding: 2px 8px; border-radius: 3px;
+}
+.noticia-data { font-size: 0.72rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.5px; }
+.noticia-titulo { font-family: var(--display); font-weight: 600; font-size: 1rem; line-height: 1.32; }
+.noticia:hover .noticia-titulo { text-decoration: underline; }
+
+/* ---------- Newsletter ---------- */
+.newsletter {
+  margin-top: 34px; background: var(--ink); color: #fff;
+  border-radius: 14px; padding: 34px 36px;
+  display: flex; align-items: center; justify-content: space-between; gap: 26px; flex-wrap: wrap;
+}
+.newsletter h3 { font-family: var(--display); font-weight: 600; font-size: 1.3rem; color: #fff; letter-spacing: -0.2px; }
+.newsletter > div p { color: #b4b4b4; font-size: 0.9rem; max-width: 46ch; margin-top: 6px; }
+.newsletter-form { display: flex; gap: 10px; flex-wrap: wrap; }
+.newsletter-form input {
+  border: 1px solid #3a3a3a; background: #0e0e0e; color: #fff;
+  border-radius: 999px; padding: 12px 20px; font: inherit; font-family: var(--sans); min-width: 220px;
+}
+.newsletter-form input::placeholder { color: #7c7c7c; }
+.newsletter-form input:focus { outline: none; border-color: #fff; }
+.newsletter .botao { background: #fff; color: var(--ink); }
+.newsletter-aviso { flex-basis: 100%; margin: 0; color: #cfe9d4; font-size: 0.86rem; min-height: 1em; }
+
 /* ---------- Faixa de confiança ---------- */
 .confianca {
   background: var(--surface-2);

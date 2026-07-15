@@ -1,0 +1,35 @@
+name: Atualizar manchetes de tecnologia
+
+on:
+  schedule:
+    # 10:00 UTC = 07:00 no horário de Brasília (envio matinal)
+    - cron: "0 10 * * *"
+  workflow_dispatch: {}   # permite rodar manualmente pelo painel do GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Gerar noticias.json e feed.xml
+        run: python scripts/gerar-noticias.py
+
+      - name: Commitar se houver mudança
+        run: |
+          git config user.name "opinioestech-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add noticias.json feed.xml
+          if git diff --staged --quiet; then
+            echo "Sem novidades hoje."
+          else
+            git commit -m "Atualiza manchetes de tecnologia ($(date -u +%Y-%m-%d))"
+            git push
+          fi
