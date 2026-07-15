@@ -10,7 +10,7 @@
   --surface:   #ffffff;
   --surface-2: #f3f3f3;   /* tiles de imagem, inputs */
   --ink:       #161616;   /* preto suave */
-  --ink-soft:  #7a7a7a;   /* cinza texto */
+  --ink-soft:  #636363;   /* cinza texto (contraste AA) */
   --border:    #e6e6e6;
   --preto:     #161616;   /* CTAs / destaque */
 
@@ -182,8 +182,9 @@ nav a.ativo { color: #fff; background: var(--ink); }
 }
 .hero-destaque:hover { text-decoration: none; }
 .hd-pedestal {
-  position: relative; width: 100%; max-width: 340px; aspect-ratio: 1 / 1;
+  position: relative; width: 100%; max-width: 320px; aspect-ratio: 1 / 1;
   display: flex; align-items: center; justify-content: center;
+  background: #fff; border-radius: 18px; box-shadow: var(--sombra);
 }
 .hd-pedestal::after {
   content: ""; position: absolute; bottom: 8%; left: 50%; transform: translateX(-50%);
@@ -239,9 +240,9 @@ nav a.ativo { color: #fff; background: var(--ink); }
 .card:hover { transform: translateY(-4px); box-shadow: var(--sombra-mid); border-color: #d4d4d4; text-decoration: none; }
 .card-capa {
   height: 190px; display: flex; align-items: center; justify-content: center;
-  background: var(--surface-2); font-size: 3.4rem;
+  background: #fff; border-bottom: 1px solid var(--border); font-size: 3.4rem;
 }
-.card-capa img { height: 130px; max-width: 78%; }
+.card-capa img { height: 140px; max-width: 82%; object-fit: contain; }
 .card-corpo { padding: 18px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
 .selo {
   display: inline-flex; align-self: flex-start;
@@ -280,7 +281,7 @@ nav a.ativo { color: #fff; background: var(--ink); }
 .categoria-card:hover { transform: translateY(-4px); box-shadow: var(--sombra-mid); text-decoration: none; }
 .categoria-card .cc-img {
   width: 120px; height: 120px; flex-shrink: 0; border-radius: 8px;
-  background: var(--surface-2); display: flex; align-items: center; justify-content: center;
+  background: #fff; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center;
 }
 .categoria-card .cc-img img { width: 92px; height: 92px; object-fit: contain; }
 .categoria-card h3 { font-family: var(--display); font-weight: 600; font-size: 1.02rem; text-transform: uppercase; letter-spacing: 1.5px; }

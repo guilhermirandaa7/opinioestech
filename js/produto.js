@@ -36,6 +36,11 @@ function montarProduto() {
 
   document.title = `${produto.nome} — Análise | Opiniões Tech`;
 
+  // Meta description específica do produto (SEO)
+  let md = document.querySelector('meta[name="description"]');
+  if (!md) { md = document.createElement("meta"); md.name = "description"; document.head.appendChild(md); }
+  md.content = `${produto.nome}: ${produto.resumo}`;
+
   // Topo
   const capa = document.getElementById("capa");
   capa.style.background = produto.cor + "22";
