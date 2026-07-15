@@ -799,7 +799,7 @@ const PRODUTOS = [
   },
   {
     id: "samsung-odyssey-g7",
-    imagem: "https://a-static.mlcdn.com.br/600x450/adaptador-de-montagem-na-parede-para-monitor-samsung-odyssey-g7-tjyuze/nocnocestadosunidos/buybox-cpb0d49hg5vz/be1ab5cbf00915e76baa2e2f0d2e4729.jpeg",
+    imagem: "https://a-static.mlcdn.com.br/600x450/monitor-samsung-odyssey-g7-37-4k-165hz-1ms-freesync-dp-hdmi-usb-ajuste-de-altura/samsung/13368/cc1348be789d1506b30d400709a187e3.jpeg",
     nome: "Samsung Odyssey G7",
     categoria: "Monitores",
     selo: "240 Hz curvo",
