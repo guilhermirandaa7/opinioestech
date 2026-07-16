@@ -447,7 +447,6 @@ nav a.ativo { color: #fff; background: var(--ink); }
 }
 .botao-compra:last-of-type { margin-bottom: 0; }
 .botao-compra:hover { transform: translateY(-2px); opacity: 0.9; text-decoration: none; }
-.botao-compra.mercadolivre { background: #fff; color: var(--ink); border: 1px solid var(--ink); }
 .botao-compra.magalu { background: #fff; color: var(--ink); border: 1px solid var(--ink); }
 .aviso-afiliado { font-size: 0.76rem; color: var(--ink-soft); margin-top: 12px; line-height: 1.5; }
 

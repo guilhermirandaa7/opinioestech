@@ -97,7 +97,6 @@ function montarProduto() {
   // Botões de compra (links de afiliado)
   const lojas = [
     { chave: "amazon", nome: "Comprar na Amazon", classe: "amazon" },
-    { chave: "mercadolivre", nome: "Ver no Mercado Livre", classe: "mercadolivre" },
     { chave: "magalu", nome: "Ver no Magalu", classe: "magalu" }
   ];
   document.getElementById("botoes-compra").innerHTML = lojas
