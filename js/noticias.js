@@ -13,8 +13,14 @@
     } catch { return ""; }
   }
 
-  fetch("noticias.json?v=" + Date.now())
-    .then((r) => { if (!r.ok) throw new Error("sem noticias"); return r.json(); })
+  // Busca as manchetes do repositório (atualizado diariamente pelo GitHub
+  // Actions); se falhar, usa a cópia local que acompanha o site.
+  const FONTE_REMOTA = "https://raw.githubusercontent.com/guilhermirandaa7/opinioestech/main/noticias.json";
+  fetch(FONTE_REMOTA + "?v=" + Date.now())
+    .then((r) => { if (!r.ok) throw new Error("remota falhou"); return r.json(); })
+    .catch(() => fetch("noticias.json?v=" + Date.now()).then((r) => {
+      if (!r.ok) throw new Error("sem noticias"); return r.json();
+    }))
     .then((dados) => {
       const itens = dados.itens || [];
       if (!itens.length) throw new Error("vazio");
