@@ -47,27 +47,72 @@ function criarCard(produto) {
     </a>`;
 }
 
-// Produto em destaque no hero (a análise mais recente)
+// Carrossel de análises em destaque no hero (roda sozinho)
 function montarDestaque(lista) {
   const el = document.getElementById("hero-destaque");
   if (!el) return;
-  const p = lista[0];
-  if (!p) { el.style.display = "none"; return; }
-  const nota = notaGeral(p);
-  const classe = classeNota(nota);
-  el.href = `produto.html?id=${p.id}`;
-  el.innerHTML = `
-    <div class="hd-pedestal">
-      <div class="hd-chip ${classe}">
-        <div class="n">${nota.toFixed(1)}<small>/10</small></div>
-        <div class="v">${textoVeredito(nota)}</div>
-      </div>
-      ${capaHTML(p)}
-    </div>
-    <div class="hd-legenda">
-      <span class="rot">Análise em destaque</span>
-      <span class="nome">${p.nome}</span>
-    </div>`;
+  const rot = lista.slice(0, 8); // as 8 análises mais recentes
+  if (!rot.length) { el.style.display = "none"; return; }
+
+  let i = 0;
+  const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function cartao(p) {
+    const nota = notaGeral(p);
+    const classe = classeNota(nota);
+    return `
+      <a class="hd-link" href="produto.html?id=${p.id}">
+        <div class="hd-pedestal">
+          <div class="hd-chip ${classe}">
+            <div class="n">${nota.toFixed(1)}<small>/10</small></div>
+            <div class="v">${textoVeredito(nota)}</div>
+          </div>
+          ${capaHTML(p)}
+        </div>
+        <div class="hd-legenda">
+          <span class="rot">Análise em destaque</span>
+          <span class="nome">${p.nome}</span>
+        </div>
+      </a>`;
+  }
+
+  el.innerHTML =
+    `<div class="hd-wrap"></div>` +
+    `<div class="hd-dots">` +
+    rot.map((_, idx) =>
+      `<button class="hd-dot" data-i="${idx}" aria-label="Ver destaque ${idx + 1}"></button>`
+    ).join("") +
+    `</div>`;
+
+  const wrap = el.querySelector(".hd-wrap");
+  const dots = [...el.querySelectorAll(".hd-dot")];
+
+  function render() {
+    wrap.innerHTML = cartao(rot[i]);
+    dots.forEach((d) => d.classList.toggle("ativo", +d.dataset.i === i));
+  }
+
+  function troca() {
+    if (reduz) { render(); return; }
+    wrap.classList.add("saindo");
+    setTimeout(() => { render(); wrap.classList.remove("saindo"); }, 260);
+  }
+
+  let timer;
+  function reagenda() {
+    if (reduz) return;
+    clearInterval(timer);
+    timer = setInterval(() => { i = (i + 1) % rot.length; troca(); }, 4500);
+  }
+
+  dots.forEach((d) =>
+    d.addEventListener("click", () => { i = +d.dataset.i; troca(); reagenda(); })
+  );
+  el.addEventListener("mouseenter", () => clearInterval(timer));
+  el.addEventListener("mouseleave", reagenda);
+
+  render();
+  reagenda();
 }
 
 // Cards de categoria, com imagem representativa e contagem

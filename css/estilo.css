@@ -181,6 +181,17 @@ nav a.ativo { color: #fff; background: var(--ink); }
   color: var(--ink);
 }
 .hero-destaque:hover { text-decoration: none; }
+.hd-wrap { width: 100%; transition: opacity 0.26s ease; }
+.hd-wrap.saindo { opacity: 0; }
+.hd-link { display: flex; flex-direction: column; align-items: center; gap: 16px; color: var(--ink); }
+.hd-link:hover { text-decoration: none; }
+.hd-dots { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
+.hd-dot {
+  width: 8px; height: 8px; padding: 0; border: none; border-radius: 50%;
+  background: #c9c9c9; cursor: pointer; transition: background 0.15s ease, transform 0.15s ease;
+}
+.hd-dot:hover { background: #9a9a9a; }
+.hd-dot.ativo { background: var(--ink); transform: scale(1.25); }
 .hd-pedestal {
   position: relative; width: 100%; max-width: 320px; aspect-ratio: 1 / 1;
   display: flex; align-items: center; justify-content: center;
@@ -196,7 +207,7 @@ nav a.ativo { color: #fff; background: var(--ink); }
   filter: drop-shadow(0 18px 26px rgba(0,0,0,0.14));
   transition: transform 0.25s ease;
 }
-.hero-destaque:hover .hd-pedestal img { transform: translateY(-6px) scale(1.03); }
+.hd-link:hover .hd-pedestal img { transform: translateY(-6px) scale(1.03); }
 .hd-chip {
   position: absolute; top: 6%; right: 8%; z-index: 2;
   background: #fff; color: var(--ink); border: 1px solid var(--border);
