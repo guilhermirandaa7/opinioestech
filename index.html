@@ -122,18 +122,24 @@
   <script src="js/app.js"></script>
   <script src="js/noticias.js"></script>
   <script>
-    // Cadastro na newsletter — enquanto o serviço de e-mail não está conectado,
-    // apenas confirma visualmente. Trocar por: form.action = "<endpoint do serviço>".
+    // Cadastro na newsletter — envia para assinar.php (hospedagem própria).
     (function () {
       var form = document.getElementById("form-newsletter");
       if (!form) return;
       form.addEventListener("submit", function (e) {
-        if (!form.getAttribute("action")) {
-          e.preventDefault();
-          var aviso = document.getElementById("newsletter-aviso");
-          aviso.textContent = "Cadastro recebido! O envio dos e-mails será ativado em breve.";
-          form.reset();
-        }
+        e.preventDefault();
+        var aviso = document.getElementById("newsletter-aviso");
+        var dados = new FormData(form);
+        aviso.textContent = "Enviando...";
+        fetch("assinar.php", { method: "POST", body: dados })
+          .then(function (r) { return r.json(); })
+          .then(function (resp) {
+            aviso.textContent = resp.msg;
+            if (resp.ok) form.reset();
+          })
+          .catch(function () {
+            aviso.textContent = "Não foi possível cadastrar agora. Tente de novo em instantes.";
+          });
       });
     })();
   </script>
