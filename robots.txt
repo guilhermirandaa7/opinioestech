@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assinar.php
+Disallow: /cancelar.php
+Disallow: /enviar-diario.php
+
+Sitemap: https://opinioestech.com/sitemap.xml
